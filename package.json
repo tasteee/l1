@@ -15,6 +15,24 @@
     "vite": "^5.0.11"
   },
   "dependencies": {
-    "babylonjs": "^6.38.0"
+    "@babylonjs/core": "^7.27.1",
+    "@babylonjs/gui": "^7.27.2",
+    "@babylonjs/gui-editor": "^7.27.2",
+    "@babylonjs/inspector": "^7.27.2",
+    "@babylonjs/loaders": "^7.27.1",
+    "@babylonjs/materials": "^7.27.2",
+    "@babylonjs/serializers": "^7.27.2",
+    "@gltf-transform/core": "^4.0.10",
+    "@types/colornames": "^1.1.4",
+    "await-of": "^3.1.1",
+    "babylonjs": "^6.38.0",
+    "colornames": "^1.1.1",
+    "hex-rgb": "^5.0.0",
+    "just-memoize": "^2.2.0",
+    "mazey": "^4.7.8",
+    "nanoid": "^5.0.7",
+    "variant": "^2.1.0",
+    "vox-reader": "^3.0.0",
+    "warning": "^4.0.3"
   }
 }

@@ -1,8 +1,20 @@
-import { AppOne as App } from './AppOne';
+// main.ts
+import './types/global'
+import '@babylonjs/core/Debug/debugLayer'
+import '@babylonjs/inspector'
+import { registerBuiltInLoaders } from '@babylonjs/loaders/dynamic'
+import { startApp } from './app'
+import { context } from './context'
 
-console.log(`main.ts starting ${App.name}`);
+function registerLoaders() {
+  const isRegistered = context.areLoadersRegistered
+  if (isRegistered) return
+  registerBuiltInLoaders()
+  context.areLoadersRegistered = true
+}
+
 window.addEventListener('DOMContentLoaded', () => {
-    let canvas = document.getElementById('renderCanvas') as HTMLCanvasElement;
-    let app = new App(canvas);
-    app.run();
-});
+  registerLoaders()
+  const canvas = document.getElementById('canvas')
+  startApp(canvas as any)
+})

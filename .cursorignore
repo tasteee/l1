@@ -1,0 +1,10 @@
+public/
+dist/
+node_modules/
+.vscode/
+LICENSE
+.prettierrc
+.editorconfig
+yarn.lock
+package-lock.json
+*.log
